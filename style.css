@@ -1,0 +1,169 @@
+/* general */
+body{
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Red Hat Display', Arial;
+}
+
+/* main */
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.title{
+    font-weight: 900;
+}
+
+.order-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(230, 238, 255);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.description{
+    word-wrap: normal;
+    width: 300px;
+    text-align: center;
+    margin: 0px;
+    color: hsl(224, 23%, 55%)
+}
+
+.plan-info{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(225, 100%, 98%);
+    padding: 20px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.plan-info a{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.left-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.icon-container{
+    margin-right: 10px;
+}
+
+.name-n-price #annual-plan{
+    font-weight: 900;
+}
+
+.name-n-price #price{
+    color:hsl(224, 23%, 55%);
+}
+
+.left-section p{
+    margin: 0px;
+} 
+
+/* Button */
+
+.pay-button{
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    width: 340px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 25px;
+    font-family: 'Red Hat Display';
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 20px 20px -5px rgba(201,187,242,0.75);
+    -webkit-box-shadow: 0px 20px 20px -5px rgba(201,187,242,0.75);
+    -moz-box-shadow: 0px 20px 20px -5px rgba(201,187,242,0.75);
+    transition: background-color 0.5s;
+    }
+
+    .pay-button:hover{
+        background-color: hsl(245, 70%, 40%);
+    }
+
+.cancel-order{
+    font-weight: bold;
+    text-decoration: none;
+    color:hsl(224, 23%, 55%);
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.cancel-order:hover{
+    text-decoration: underline;
+}
+
+/* Media Query for Mobile */
+
+@media only screen and (max-width: 375px){
+    body{
+        background-image: url("./images/pattern-background-mobile.svg");
+    }
+    .hero{
+        width: 330px;
+    }
+    .description{
+        width: 270px;
+        line-height: 25px;
+    }
+    .plan-info{
+        width: 250px;
+        background-color: hsl(225, 100%, 98%);
+        padding: 15px 15px;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+
+    .icon-container{
+        margin-right: 20px;
+    }
+
+    .name-n-price #annual-plan, #price{
+        font-size: 14px;
+    }
+    
+    .cancel-order{
+        font-size: 14px;
+    }
+
+    .pay-button{
+        width: 280px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-top: 25px;
+        font-family: 'Red Hat Display';
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 0px 20px 20px -5px rgba(205,215,247,0.75);
+        -webkit-box-shadow: 0px 20px 20px -5px rgba(205,215,247,0.75);
+        -moz-box-shadow: 0px 20px 20px -5px rgba(205,215,247,0.75);
+        transition: background-color 0.5s;
+        }
+}
